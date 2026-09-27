@@ -30,9 +30,9 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
         update: () {
           final currentUser = context.read<AuthProvider>().currentUser;
           return context.read<ReportProvider>().markReportFixed(
-            reportId: widget.reportId,
-            fixedBy: currentUser?.fullName ?? 'Khuyết danh',
-          );
+                reportId: widget.reportId,
+                fixedBy: currentUser?.fullName ?? 'Khuyết danh',
+              );
         },
         successMessage: 'Đã cập nhật trạng thái thành ĐÃ SỬA',
       );
@@ -51,9 +51,9 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
         update: () {
           final currentUser = context.read<AuthProvider>().currentUser;
           return context.read<ReportProvider>().markReportUnableToFix(
-            reportId: widget.reportId,
-            fixedBy: currentUser?.fullName ?? 'Khuyết danh',
-          );
+                reportId: widget.reportId,
+                fixedBy: currentUser?.fullName ?? 'Khuyết danh',
+              );
         },
         successMessage: 'Đã chuyển trạng thái thành Không thể sửa.',
       );
@@ -142,7 +142,8 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
         children: [
           Card(
             elevation: 3,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
             child: Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -153,9 +154,10 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
                       Expanded(
                         child: Text(
                           report.category,
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style:
+                              Theme.of(context).textTheme.titleLarge?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                         ),
                       ),
                       StatusChip(status: report.status),
@@ -211,10 +213,12 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
                   ? const SizedBox(
                       width: 18,
                       height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: Colors.white),
                     )
                   : const Icon(Icons.check_circle_outline),
-              label: const Text('ĐÃ SỬA', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              label: const Text('ĐÃ SỬA',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             ),
             const SizedBox(height: 12),
             OutlinedButton.icon(
@@ -228,7 +232,8 @@ class _ReportDetailScreenState extends State<ReportDetailScreen> {
                 ),
               ),
               icon: const Icon(Icons.cancel_outlined),
-              label: const Text('KHÔNG THỂ SỬA', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              label: const Text('KHÔNG THỂ SỬA',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             ),
           ],
         ],

@@ -163,7 +163,8 @@ class _ReportListBody extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Icons.inbox_outlined, size: 64, color: Colors.grey.shade400),
+                        Icon(Icons.inbox_outlined,
+                            size: 64, color: Colors.grey.shade400),
                         const SizedBox(height: 16),
                         Text(
                           'Chưa có dữ liệu',
@@ -248,10 +249,12 @@ class _FilterDropdowns extends StatelessWidget {
                   ),
                   filled: true,
                   fillColor: Colors.blue.shade50,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  contentPadding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   isDense: true,
                 ),
-                icon: Icon(Icons.category_outlined, color: Colors.blue.shade700, size: 20),
+                icon: Icon(Icons.category_outlined,
+                    color: Colors.blue.shade700, size: 20),
                 items: reportProvider.categories
                     .map(
                       (category) => DropdownMenuItem(
@@ -285,10 +288,12 @@ class _FilterDropdowns extends StatelessWidget {
                   ),
                   filled: true,
                   fillColor: Colors.blue.shade50,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  contentPadding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   isDense: true,
                 ),
-                icon: Icon(Icons.filter_list, color: Colors.blue.shade700, size: 20),
+                icon: Icon(Icons.filter_list,
+                    color: Colors.blue.shade700, size: 20),
                 items: reportProvider.statuses
                     .map(
                       (status) => DropdownMenuItem(

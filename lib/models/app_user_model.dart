@@ -17,7 +17,8 @@ class AppUserModel {
   final UserRole role;
   final bool isActive;
 
-  factory AppUserModel.fromDocument(DocumentSnapshot<Map<String, dynamic>> doc) {
+  factory AppUserModel.fromDocument(
+      DocumentSnapshot<Map<String, dynamic>> doc) {
     final data = doc.data() ?? {};
 
     return AppUserModel(

@@ -37,7 +37,7 @@ class AuthProvider extends ChangeNotifier {
   }
 
   Future<bool> signIn({
-    required String email,
+    required String username,
     required String password,
   }) async {
     isLoading = true;
@@ -45,7 +45,7 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      await _authService.signIn(email: email, password: password);
+      await _authService.signIn(username: username, password: password);
       await loadCurrentUser();
       return currentUser != null;
     } catch (error) {

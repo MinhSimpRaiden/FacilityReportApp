@@ -14,19 +14,36 @@ class AuthService {
   Future<AppUserModel?> getCurrentAppUser() async => _currentUser;
 
   Future<void> signIn({
-    required String email,
+    required String username,
     required String password,
   }) async {
-    // Version 1 uses mock login so the UI can run before Firebase Auth setup.
-    // Later: replace this with FirebaseAuth.instance.signInWithEmailAndPassword.
-    _currentUser = AppUserModel(
-      uid: 'mock-staff-user',
-      fullName: 'Nhân viên trực',
-      email: email.trim().isEmpty ? 'staff@example.com' : email.trim(),
-      role: UserRole.manager,
-      isActive: true,
-    );
-    _authController.add(_currentUser);
+    final cleanUsername = username.trim().toLowerCase();
+
+    if (cleanUsername == 'admin' && password == '123456') {
+      _currentUser = AppUserModel(
+        uid: 'user-vp',
+        fullName: 'Nguyễn Thị Duyên',
+        email: 'duyen@gmail.com', // Keep for model consistency
+        role: UserRole.manager,
+        isActive: true,
+      );
+      _authController.add(_currentUser);
+      return;
+    }
+
+    if (cleanUsername == 'staff' && password == '123456') {
+      _currentUser = AppUserModel(
+        uid: 'user-guard',
+        fullName: 'Nhân viên',
+        email: 'baove@gmail.com', // Keep for model consistency
+        role: UserRole.staff,
+        isActive: true,
+      );
+      _authController.add(_currentUser);
+      return;
+    }
+
+    throw Exception('Tên đăng nhập hoặc mật khẩu không đúng');
   }
 
   Future<void> signOut() async {

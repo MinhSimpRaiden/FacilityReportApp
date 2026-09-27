@@ -7,7 +7,8 @@ import '../core/constants/app_constants.dart';
 import '../models/report_model.dart';
 
 class GoogleSheetApiService {
-  GoogleSheetApiService({http.Client? client}) : _client = client ?? http.Client();
+  GoogleSheetApiService({http.Client? client})
+      : _client = client ?? http.Client();
 
   final http.Client _client;
 
@@ -49,7 +50,7 @@ class GoogleSheetApiService {
   Future<void> updateReportStatus(
     String reportId,
     String status, {
-    String fixedBy = 'mock_staff',
+    String fixedBy = 'Khuyết danh',
   }) async {
     if (!isConfigured) {
       throw StateError('Apps Script Web App URL is not configured.');
@@ -77,7 +78,8 @@ class GoogleSheetApiService {
     required String userName,
   }) async {
     if (!isConfigured) {
-      debugPrint('Apps Script API is not configured. Token was not registered.');
+      debugPrint(
+          'Apps Script API is not configured. Token was not registered.');
       return;
     }
 
@@ -176,8 +178,10 @@ class GoogleSheetApiService {
         ? response.body.substring(0, 300)
         : response.body;
 
-    debugPrint('Apps Script response [$requestName] status: ${response.statusCode}');
-    debugPrint('Apps Script response [$requestName] content-type: $contentType');
+    debugPrint(
+        'Apps Script response [$requestName] status: ${response.statusCode}');
+    debugPrint(
+        'Apps Script response [$requestName] content-type: $contentType');
     debugPrint('Apps Script response [$requestName] body preview: $preview');
   }
 

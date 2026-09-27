@@ -48,12 +48,15 @@ class ReportCard extends StatelessWidget {
               const SizedBox(height: 12),
               Row(
                 children: [
-                  Icon(Icons.location_on_outlined, size: 16, color: Colors.grey.shade600),
+                  Icon(Icons.location_on_outlined,
+                      size: 16, color: Colors.grey.shade600),
                   const SizedBox(width: 4),
                   Expanded(
                     child: Text(
                       report.location,
-                      style: TextStyle(color: Colors.grey.shade700, fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                          color: Colors.grey.shade700,
+                          fontWeight: FontWeight.w500),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -70,7 +73,8 @@ class ReportCard extends StatelessWidget {
               const SizedBox(height: 12),
               Row(
                 children: [
-                  Icon(Icons.access_time, size: 16, color: Colors.grey.shade500),
+                  Icon(Icons.access_time,
+                      size: 16, color: Colors.grey.shade500),
                   const SizedBox(width: 4),
                   Text(
                     DateTimeUtils.formatDateTime(report.createdAt),

@@ -188,9 +188,8 @@ class ReportProvider extends ChangeNotifier {
     _allReports = sortedReports;
     _knownReportIds = sortedReports.map((report) => report.id).toSet();
 
-    final categoryStillExists =
-        _selectedCategory == allCategoriesLabel ||
-            _allReports.any((report) => report.category == _selectedCategory);
+    final categoryStillExists = _selectedCategory == allCategoriesLabel ||
+        _allReports.any((report) => report.category == _selectedCategory);
     if (!categoryStillExists) {
       _selectedCategory = allCategoriesLabel;
     }

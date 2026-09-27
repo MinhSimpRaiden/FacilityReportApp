@@ -43,6 +43,7 @@ Future<void> _initializeFirebase() async {
     }
     debugPrint('Firebase initialized successfully');
   } catch (error) {
-    debugPrint('Firebase initialization failed. Using mock report data: $error');
+    debugPrint(
+        'Firebase initialization failed. Using mock report data: $error');
   }
 }

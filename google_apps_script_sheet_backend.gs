@@ -225,7 +225,7 @@ function getReportsByStatus(status) {
 function updateReportStatus(data) {
   const reportId = String(data.reportId || '').trim();
   const status = normalizeStatus_(data.status);
-  const handledBy = String(data.fixedBy || data.handledBy || 'mock_staff').trim() || 'mock_staff';
+  const handledBy = String(data.fixedBy || data.handledBy || 'Khuyết danh').trim() || 'Khuyết danh';
   const note = data.note === undefined ? null : String(data.note || '');
 
   if (!reportId) {

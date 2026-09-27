@@ -41,7 +41,7 @@ class ReportService {
       status: ReportStatus.unableToFix,
       createdAt: DateTime(2026, 6, 10, 8, 30),
       fixedAt: DateTime(2026, 6, 10, 9, 0),
-      fixedBy: 'mock_staff',
+      fixedBy: 'Nhân viên',
     ),
   ];
 
@@ -93,7 +93,6 @@ class ReportService {
     required ReportStatus status,
     required String fixedBy,
   }) async {
-    const fixedByValue = 'mock_staff';
     debugPrint('Updating report $reportId to ${status.value} via Apps Script');
 
     if (!isApiConfigured) {
@@ -101,7 +100,7 @@ class ReportService {
       _updateMockReportStatus(
         reportId: reportId,
         status: status,
-        fixedBy: fixedByValue,
+        fixedBy: fixedBy,
       );
       debugPrint('Update success');
       return _sortedMockReports();
@@ -113,12 +112,13 @@ class ReportService {
       await _apiService.updateReportStatus(
         reportId,
         status.value,
-        fixedBy: fixedByValue,
+        fixedBy: fixedBy,
       );
       debugPrint('Update success');
     } catch (error) {
       postError = error;
-      debugPrint('updateReportStatus POST returned an error, verifying with refresh: $error');
+      debugPrint(
+          'updateReportStatus POST returned an error, verifying with refresh: $error');
     }
 
     final refreshedReports = await _apiService.fetchReports();
