@@ -201,65 +201,97 @@ class _FilterDropdowns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-      child: Row(
-        children: [
-          Expanded(
-            child: DropdownButtonFormField<String>(
-              initialValue: reportProvider.selectedCategory,
-              isExpanded: true,
-              decoration: const InputDecoration(
-                labelText: 'Hạng mục',
-                border: OutlineInputBorder(),
-                isDense: true,
-              ),
-              items: reportProvider.categories
-                  .map(
-                    (category) => DropdownMenuItem(
-                      value: category,
-                      child: Text(
-                        category,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  )
-                  .toList(),
-              onChanged: (value) {
-                if (value != null) {
-                  reportProvider.setSelectedCategory(value);
-                }
-              },
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.05),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
             ),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: DropdownButtonFormField<String>(
-              initialValue: reportProvider.selectedStatus,
-              isExpanded: true,
-              decoration: const InputDecoration(
-                labelText: 'Trạng thái',
-                border: OutlineInputBorder(),
-                isDense: true,
-              ),
-              items: reportProvider.statuses
-                  .map(
-                    (status) => DropdownMenuItem(
-                      value: status,
-                      child: Text(
-                        status,
-                        overflow: TextOverflow.ellipsis,
+          ],
+        ),
+        padding: const EdgeInsets.all(12),
+        child: Row(
+          children: [
+            Expanded(
+              child: DropdownButtonFormField<String>(
+                initialValue: reportProvider.selectedCategory,
+                isExpanded: true,
+                decoration: InputDecoration(
+                  labelText: 'Hạng mục',
+                  labelStyle: TextStyle(color: Colors.blue.shade700),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
+                  ),
+                  filled: true,
+                  fillColor: Colors.blue.shade50,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  isDense: true,
+                ),
+                icon: Icon(Icons.category_outlined, color: Colors.blue.shade700, size: 20),
+                items: reportProvider.categories
+                    .map(
+                      (category) => DropdownMenuItem(
+                        value: category,
+                        child: Text(
+                          category,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 14),
+                        ),
                       ),
-                    ),
-                  )
-                  .toList(),
-              onChanged: (value) {
-                if (value != null) {
-                  reportProvider.setSelectedStatus(value);
-                }
-              },
+                    )
+                    .toList(),
+                onChanged: (value) {
+                  if (value != null) {
+                    reportProvider.setSelectedCategory(value);
+                  }
+                },
+              ),
             ),
-          ),
-        ],
+            const SizedBox(width: 12),
+            Expanded(
+              child: DropdownButtonFormField<String>(
+                initialValue: reportProvider.selectedStatus,
+                isExpanded: true,
+                decoration: InputDecoration(
+                  labelText: 'Trạng thái',
+                  labelStyle: TextStyle(color: Colors.blue.shade700),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
+                  ),
+                  filled: true,
+                  fillColor: Colors.blue.shade50,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  isDense: true,
+                ),
+                icon: Icon(Icons.filter_list, color: Colors.blue.shade700, size: 20),
+                items: reportProvider.statuses
+                    .map(
+                      (status) => DropdownMenuItem(
+                        value: status,
+                        child: Text(
+                          status,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 14),
+                        ),
+                      ),
+                    )
+                    .toList(),
+                onChanged: (value) {
+                  if (value != null) {
+                    reportProvider.setSelectedStatus(value);
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
