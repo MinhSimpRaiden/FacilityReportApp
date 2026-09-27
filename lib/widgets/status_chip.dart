@@ -11,12 +11,20 @@ class StatusChip extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = _colorsForStatus(status);
 
-    return Chip(
-      label: Text(status.label),
-      backgroundColor: colors.background,
-      labelStyle: TextStyle(
-        color: colors.foreground,
-        fontWeight: FontWeight.w600,
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: colors.background,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: colors.foreground.withValues(alpha: 0.3)),
+      ),
+      child: Text(
+        status.label,
+        style: TextStyle(
+          color: colors.foreground,
+          fontWeight: FontWeight.bold,
+          fontSize: 12,
+        ),
       ),
     );
   }
