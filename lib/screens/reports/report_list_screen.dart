@@ -157,18 +157,36 @@ class _ReportListBody extends StatelessWidget {
         _FilterDropdowns(reportProvider: reportProvider),
         Expanded(
           child: filteredReports.isEmpty
-              ? const Center(
+              ? Center(
                   child: Padding(
-                    padding: EdgeInsets.all(16),
-                    child: Text(
-                      'Không có báo cáo nào phù hợp với bộ lọc.',
-                      textAlign: TextAlign.center,
+                    padding: const EdgeInsets.all(32),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.inbox_outlined, size: 64, color: Colors.grey.shade400),
+                        const SizedBox(height: 16),
+                        Text(
+                          'Chưa có dữ liệu',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey.shade700,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Không có báo cáo nào phù hợp với bộ lọc hiện tại.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.grey.shade500),
+                        ),
+                      ],
                     ),
                   ),
                 )
               : RefreshIndicator(
                   onRefresh: () async => reportProvider.refreshReports(),
                   child: ListView.builder(
+                    padding: const EdgeInsets.only(bottom: 24),
                     itemCount: filteredReports.length,
                     itemBuilder: (context, index) {
                       final report = filteredReports[index];
