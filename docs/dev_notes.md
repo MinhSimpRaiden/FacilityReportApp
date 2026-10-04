@@ -21,3 +21,4 @@
 - Release process requires QA sign-off.
 - Code style guidelines point to updated lint rules.
 - Error handling practices require global boundary catch.
+- State management approach uses Riverpod/Provider.
