@@ -31,3 +31,4 @@
 - Caching strategy uses local Hive database.
 - CI/CD pipeline notes updated for GitHub Actions.
 - PR review guidelines require two approvals.
+- Mock data usage is restricted to debug builds.
