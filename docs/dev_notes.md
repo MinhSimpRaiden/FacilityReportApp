@@ -14,3 +14,4 @@
 - Testing workflow requires all unit tests to pass.
 - Deployment notes updated for staging environment.
 - Configuration documentation now covers flavor setup.
+- Development notes appended with recent meetings.
