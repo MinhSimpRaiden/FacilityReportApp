@@ -37,3 +37,4 @@
 - Color palette choices aligned with new brand guidelines.
 - Typography notes updated to include custom fonts.
 - API endpoints list synced with backend swagger.
+- Pagination strategy utilizes cursor-based approach.
