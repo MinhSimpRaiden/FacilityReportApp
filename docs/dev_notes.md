@@ -46,3 +46,4 @@
 - User role permissions mapped to feature flags.
 - Data validation rules require client and server checks.
 - Animation guidelines prefer implicit animations.
+- Navigation structure uses GoRouter/AutoRoute.
