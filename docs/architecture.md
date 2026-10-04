@@ -47,3 +47,4 @@
 - Websocket connection planned for real-time updates.
 - Data encryption at rest applied to sensitive fields.
 - Secure storage usage for tokens and credentials.
+- Biometric auth flow supported for login.
