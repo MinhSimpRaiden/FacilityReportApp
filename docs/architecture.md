@@ -14,3 +14,4 @@
 - Theme configuration supports dark and light modes.
 - CI/CD workflow runs on GitHub Actions.
 - Push notification handling via Firebase.
+- Responsive layout adapts to tablets and phones.
