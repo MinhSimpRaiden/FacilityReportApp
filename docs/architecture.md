@@ -23,3 +23,4 @@
 - Mock environment setup uses mocktail.
 - Test coverage goals aim for 80%.
 - Widget testing strategy covers complex UI.
+- Integration test setup runs on real devices.
