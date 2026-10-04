@@ -49,3 +49,4 @@
 - Navigation structure uses GoRouter/AutoRoute.
 - Empty state documentation covers all list views.
 - Loading state patterns use skeleton screens.
+- Overall roadmap updated for Q4 deliverables.
