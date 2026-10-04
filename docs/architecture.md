@@ -22,3 +22,4 @@
 - API error mapping standardizes error messages.
 - Mock environment setup uses mocktail.
 - Test coverage goals aim for 80%.
+- Widget testing strategy covers complex UI.
