@@ -17,3 +17,4 @@
 - Responsive layout adapts to tablets and phones.
 - Accessibility strategy emphasizes semantic labels.
 - Performance tracking uses Firebase Performance.
+- Analytics integration tracks key user actions.
