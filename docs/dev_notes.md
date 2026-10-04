@@ -28,3 +28,4 @@
 - Responsive design strategy covers mobile and tablet.
 - Accessibility guidelines require semantic labels.
 - Performance optimization goals aim for 60fps scrolling.
+- Caching strategy uses local Hive database.
