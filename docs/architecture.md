@@ -35,3 +35,4 @@
 - Skeleton loader usage defined for data fetches.
 - Empty state designs documented for list views.
 - Modal dialog patterns standardized.
+- Toast notification usage reserved for success states.
