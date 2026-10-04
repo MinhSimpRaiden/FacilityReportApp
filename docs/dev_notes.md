@@ -36,3 +36,4 @@
 - Icon usage guidelines prefer vector assets.
 - Color palette choices aligned with new brand guidelines.
 - Typography notes updated to include custom fonts.
+- API endpoints list synced with backend swagger.
