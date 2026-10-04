@@ -16,3 +16,4 @@
 - Push notification handling via Firebase.
 - Responsive layout adapts to tablets and phones.
 - Accessibility strategy emphasizes semantic labels.
+- Performance tracking uses Firebase Performance.
