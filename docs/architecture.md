@@ -33,3 +33,4 @@
 - Form validation rules enforced on client side.
 - Animation conventions prefer simple transitions.
 - Skeleton loader usage defined for data fetches.
+- Empty state designs documented for list views.
