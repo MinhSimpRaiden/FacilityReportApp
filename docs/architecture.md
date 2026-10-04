@@ -46,3 +46,4 @@
 - Retry mechanisms added to critical API calls.
 - Websocket connection planned for real-time updates.
 - Data encryption at rest applied to sensitive fields.
+- Secure storage usage for tokens and credentials.
