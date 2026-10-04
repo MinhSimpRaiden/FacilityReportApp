@@ -26,3 +26,4 @@
 - Logging best practices prohibit PII in logs.
 - Localization notes added for upcoming multi-language support.
 - Responsive design strategy covers mobile and tablet.
+- Accessibility guidelines require semantic labels.
