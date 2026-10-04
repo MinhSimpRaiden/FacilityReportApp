@@ -47,3 +47,4 @@
 - Data validation rules require client and server checks.
 - Animation guidelines prefer implicit animations.
 - Navigation structure uses GoRouter/AutoRoute.
+- Empty state documentation covers all list views.
