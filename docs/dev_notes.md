@@ -30,3 +30,4 @@
 - Performance optimization goals aim for 60fps scrolling.
 - Caching strategy uses local Hive database.
 - CI/CD pipeline notes updated for GitHub Actions.
+- PR review guidelines require two approvals.
