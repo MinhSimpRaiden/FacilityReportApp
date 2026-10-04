@@ -18,3 +18,4 @@
 - Accessibility strategy emphasizes semantic labels.
 - Performance tracking uses Firebase Performance.
 - Analytics integration tracks key user actions.
+- Security practices include certificate pinning.
