@@ -18,3 +18,4 @@
 - Architecture overview emphasizes MVVM pattern.
 - Security considerations note added regarding API keys.
 - Branching strategy follows GitFlow conventions.
+- Release process requires QA sign-off.
