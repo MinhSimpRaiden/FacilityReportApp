@@ -11,3 +11,4 @@
 - Project structure follows feature-based organization.
 - Local development workflow updated with hot-reload tips.
 - Contribution guidelines specify PR template usage.
+- Testing workflow requires all unit tests to pass.
