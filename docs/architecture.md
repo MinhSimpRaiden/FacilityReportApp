@@ -21,3 +21,4 @@
 - Security practices include certificate pinning.
 - API error mapping standardizes error messages.
 - Mock environment setup uses mocktail.
+- Test coverage goals aim for 80%.
