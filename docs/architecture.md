@@ -11,3 +11,4 @@
 - Dependency injection is manually wired.
 - Error handling mechanism catches global exceptions.
 - Localization setup uses flutter_localizations.
+- Theme configuration supports dark and light modes.
