@@ -20,3 +20,4 @@
 - Analytics integration tracks key user actions.
 - Security practices include certificate pinning.
 - API error mapping standardizes error messages.
+- Mock environment setup uses mocktail.
