@@ -19,3 +19,4 @@
 - Security considerations note added regarding API keys.
 - Branching strategy follows GitFlow conventions.
 - Release process requires QA sign-off.
+- Code style guidelines point to updated lint rules.
