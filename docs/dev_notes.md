@@ -38,3 +38,4 @@
 - Typography notes updated to include custom fonts.
 - API endpoints list synced with backend swagger.
 - Pagination strategy utilizes cursor-based approach.
+- Offline support plan outlines optimistic UI updates.
