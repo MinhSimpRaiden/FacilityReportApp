@@ -10,3 +10,4 @@
 - Offline caching relies on Hive.
 - Dependency injection is manually wired.
 - Error handling mechanism catches global exceptions.
+- Localization setup uses flutter_localizations.
