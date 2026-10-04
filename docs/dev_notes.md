@@ -15,3 +15,4 @@
 - Deployment notes updated for staging environment.
 - Configuration documentation now covers flavor setup.
 - Development notes appended with recent meetings.
+- Architecture overview emphasizes MVVM pattern.
