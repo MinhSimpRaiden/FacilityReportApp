@@ -27,3 +27,4 @@
 - Deployment environments include dev, staging, prod.
 - Feature flags manage progressive rollouts.
 - User permission roles include admin, manager, user.
+- Image caching approach uses cached_network_image.
