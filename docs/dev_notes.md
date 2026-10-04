@@ -6,3 +6,4 @@
 - Environment setup notes added for local config.
 - API documentation link placeholder added.
 - Authentication flow diagram notes included.
+- Database setup requires running migrations first.
