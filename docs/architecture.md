@@ -38,3 +38,4 @@
 - Toast notification usage reserved for success states.
 - Deep linking setup handles custom URI schemes.
 - Background fetch logic syncs data periodically.
+- App state lifecycle handles resume/pause events.
