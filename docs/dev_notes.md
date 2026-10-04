@@ -7,3 +7,4 @@
 - API documentation link placeholder added.
 - Authentication flow diagram notes included.
 - Database setup requires running migrations first.
+- Troubleshooting section expanded with common issues.
