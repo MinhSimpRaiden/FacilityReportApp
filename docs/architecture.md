@@ -6,3 +6,4 @@
 - State management is handled via Provider.
 - Routing is implemented with go_router.
 - Database schema overview added for SQLite.
+- Authentication flow uses JWT tokens.
