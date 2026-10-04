@@ -43,3 +43,4 @@
 - Analytics tracking events documented.
 - Crash reporting notes point to Firebase Crashlytics.
 - App store submission guidelines include screenshot requirements.
+- User role permissions mapped to feature flags.
