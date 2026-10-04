@@ -48,3 +48,4 @@
 - Animation guidelines prefer implicit animations.
 - Navigation structure uses GoRouter/AutoRoute.
 - Empty state documentation covers all list views.
+- Loading state patterns use skeleton screens.
