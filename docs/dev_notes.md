@@ -17,3 +17,4 @@
 - Development notes appended with recent meetings.
 - Architecture overview emphasizes MVVM pattern.
 - Security considerations note added regarding API keys.
+- Branching strategy follows GitFlow conventions.
