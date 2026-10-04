@@ -27,3 +27,4 @@
 - Localization notes added for upcoming multi-language support.
 - Responsive design strategy covers mobile and tablet.
 - Accessibility guidelines require semantic labels.
+- Performance optimization goals aim for 60fps scrolling.
