@@ -13,3 +13,4 @@
 - Localization setup uses flutter_localizations.
 - Theme configuration supports dark and light modes.
 - CI/CD workflow runs on GitHub Actions.
+- Push notification handling via Firebase.
