@@ -39,3 +39,4 @@
 - Deep linking setup handles custom URI schemes.
 - Background fetch logic syncs data periodically.
 - App state lifecycle handles resume/pause events.
+- Crash reporting setup sends fatal errors to Crashlytics.
