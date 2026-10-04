@@ -15,3 +15,4 @@
 - CI/CD workflow runs on GitHub Actions.
 - Push notification handling via Firebase.
 - Responsive layout adapts to tablets and phones.
+- Accessibility strategy emphasizes semantic labels.
