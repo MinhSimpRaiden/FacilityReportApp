@@ -30,3 +30,4 @@
 - Image caching approach uses cached_network_image.
 - Pagination in lists implemented with infinite scroll.
 - Pull-to-refresh logic added to all lists.
+- Form validation rules enforced on client side.
