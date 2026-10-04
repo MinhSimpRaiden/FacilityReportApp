@@ -33,3 +33,4 @@
 - PR review guidelines require two approvals.
 - Mock data usage is restricted to debug builds.
 - Environment variable descriptions added to dot-env template.
+- Icon usage guidelines prefer vector assets.
