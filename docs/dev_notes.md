@@ -45,3 +45,4 @@
 - App store submission guidelines include screenshot requirements.
 - User role permissions mapped to feature flags.
 - Data validation rules require client and server checks.
+- Animation guidelines prefer implicit animations.
