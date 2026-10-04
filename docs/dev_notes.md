@@ -4,3 +4,4 @@
 - Installation steps clarified for new developers.
 - Development requirements now list the correct SDK version.
 - Environment setup notes added for local config.
+- API documentation link placeholder added.
