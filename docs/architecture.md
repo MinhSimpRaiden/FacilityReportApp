@@ -25,3 +25,4 @@
 - Widget testing strategy covers complex UI.
 - Integration test setup runs on real devices.
 - Deployment environments include dev, staging, prod.
+- Feature flags manage progressive rollouts.
