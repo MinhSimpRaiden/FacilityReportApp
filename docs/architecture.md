@@ -29,3 +29,4 @@
 - User permission roles include admin, manager, user.
 - Image caching approach uses cached_network_image.
 - Pagination in lists implemented with infinite scroll.
+- Pull-to-refresh logic added to all lists.
