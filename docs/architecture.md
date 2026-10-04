@@ -32,3 +32,4 @@
 - Pull-to-refresh logic added to all lists.
 - Form validation rules enforced on client side.
 - Animation conventions prefer simple transitions.
+- Skeleton loader usage defined for data fetches.
