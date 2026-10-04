@@ -49,3 +49,4 @@
 - Secure storage usage for tokens and credentials.
 - Biometric auth flow supported for login.
 - Session timeout logic logs user out after inactivity.
+- App update prompt mechanism checks minimum version.
