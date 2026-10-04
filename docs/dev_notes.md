@@ -23,3 +23,4 @@
 - Error handling practices require global boundary catch.
 - State management approach uses Riverpod/Provider.
 - Third-party dependencies must be vetted before addition.
+- Logging best practices prohibit PII in logs.
