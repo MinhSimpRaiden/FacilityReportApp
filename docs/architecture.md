@@ -42,3 +42,4 @@
 - Crash reporting setup sends fatal errors to Crashlytics.
 - Log aggregation forwards warnings and errors.
 - A/B testing framework integrated.
+- Rate limiting handling implements exponential backoff.
