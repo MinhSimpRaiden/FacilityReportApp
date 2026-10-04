@@ -7,3 +7,4 @@
 - Routing is implemented with go_router.
 - Database schema overview added for SQLite.
 - Authentication flow uses JWT tokens.
+- Offline caching relies on Hive.
