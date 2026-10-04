@@ -42,3 +42,4 @@
 - Push notification notes detail FCM setup.
 - Analytics tracking events documented.
 - Crash reporting notes point to Firebase Crashlytics.
+- App store submission guidelines include screenshot requirements.
