@@ -36,3 +36,4 @@
 - Empty state designs documented for list views.
 - Modal dialog patterns standardized.
 - Toast notification usage reserved for success states.
+- Deep linking setup handles custom URI schemes.
