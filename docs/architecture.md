@@ -44,3 +44,4 @@
 - A/B testing framework integrated.
 - Rate limiting handling implements exponential backoff.
 - Retry mechanisms added to critical API calls.
+- Websocket connection planned for real-time updates.
