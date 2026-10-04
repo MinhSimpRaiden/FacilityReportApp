@@ -40,3 +40,4 @@
 - Pagination strategy utilizes cursor-based approach.
 - Offline support plan outlines optimistic UI updates.
 - Push notification notes detail FCM setup.
+- Analytics tracking events documented.
