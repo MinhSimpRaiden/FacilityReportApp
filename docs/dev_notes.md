@@ -10,3 +10,4 @@
 - Troubleshooting section expanded with common issues.
 - Project structure follows feature-based organization.
 - Local development workflow updated with hot-reload tips.
+- Contribution guidelines specify PR template usage.
